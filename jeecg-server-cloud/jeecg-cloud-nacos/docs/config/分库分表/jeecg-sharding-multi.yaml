@@ -4,16 +4,16 @@ spring:
       names: ds0,ds1
       ds0:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://jeecg-boot-mysql:3306/jeecg-boot?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+        url: jdbc:mysql://192.168.2.105:3306/jeecg-boot?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
         type: com.alibaba.druid.pool.DruidDataSource
-        username: root
-        password: root
+        username: test2018
+        password: Meis@2018
       ds1:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://jeecg-boot-mysql:3306/jeecg-boot2?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+        url: jdbc:mysql://j192.168.2.105:3306/jeecg-boot2?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
         type: com.alibaba.druid.pool.DruidDataSource
-        username: root
-        password: root
+        username: test2018
+        password: Meis@2018
     props:
       sql-show: true
     rules:

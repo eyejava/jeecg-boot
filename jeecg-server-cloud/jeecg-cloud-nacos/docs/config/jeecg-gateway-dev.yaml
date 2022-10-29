@@ -8,6 +8,6 @@ jeecg:
 spring:
   redis:
     database: 0
-    host: jeecg-boot-redis
+    host: 192.168.2.105
     port: 6379
-    password:
+    password: meistest2020

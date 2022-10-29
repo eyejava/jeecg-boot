@@ -26,17 +26,17 @@ spring:
         connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
       datasource:
         master:
-          url: jdbc:mysql://jeecg-boot-mysql:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
-          username: root
-          password: root
+          url: jdbc:mysql://192.168.2.105:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+          username: test2018
+          password: Meis@2018
           driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     database: 0
-    host: jeecg-boot-redis
-    password:
+    host: 192.168.2.105
+    password: meistest2020
     port: 6379
   rabbitmq:
-    host: jeecg-boot-rabbitmq
+    host: 192.168.2.105
     username: guest
     password: guest
     port: 5672
@@ -96,7 +96,7 @@ jeecg:
     logPath: logs/jeecg/job/jobhandler/
     logRetentionDays: 30
   redisson:
-    address: jeecg-boot-redis:6379
+    address: 192.168.2.105:6379
     password:
     type: STANDALONE
     enabled: true
